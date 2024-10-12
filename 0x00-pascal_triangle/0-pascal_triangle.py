@@ -4,6 +4,7 @@
     Additional Method of previous row
 """
 
+
 def pascal_triangle(n):
 
     """
