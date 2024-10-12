@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+    This is the printing of a Pascal Triangle using
+    Additional Method of previous row
+"""
 
 def pascal_triangle(n):
+    """
+    Function for processing the data
+    """
     triangle = []
     for i in range(n):# Loop to generate each row
         row = [1] * (i + 1)  # Start with all 1s
