@@ -1,4 +1,4 @@
-#!/usr/bin/env/ python3
+#!/usr/bin/python3
 """ Code to validate UTF-8 Encoding
 """
 
