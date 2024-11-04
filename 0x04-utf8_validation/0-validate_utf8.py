@@ -2,11 +2,12 @@
 """ Code to validate UTF-8 Encoding
 """
 
+
 def validUTF8(data):
     """FUnction to validate The list of bytes
 
     Args:
-        data: Used for tracking the number of arguments in 
+        data: Used for tracking the number of arguments in
         a list
     Returns:
         To return a  valid UTF-8 code
@@ -26,14 +27,14 @@ def validUTF8(data):
 
             elif (byte & num1) and (byte & num2):
                 num = num1
-                print("before while",num)
+                print("before while", num)
                 while (byte & num):
                     num_in_bytes += 1
                     num >>= 1
 
                 # Making sure UTF-8 is not more than 4 bytes
                 if num_in_bytes == 1 or num_in_bytes > 4:
-                    print("before false",num_in_bytes)
+                    print("before false", num_in_bytes)
                     return False
             else:
                 return False
@@ -44,4 +45,4 @@ def validUTF8(data):
         num_in_bytes -= 1
         print(num_in_bytes)
 
-    return num_in_bytes == 0 #To return True if all bytes matched pattern
+    return num_in_bytes == 0  # To return True if all bytes matched pattern
